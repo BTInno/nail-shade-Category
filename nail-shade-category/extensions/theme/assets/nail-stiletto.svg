@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="st-body" cx="50%" cy="42%" r="58%">
+      <stop offset="0%" stop-color="#E8AAB6"/>
+      <stop offset="55%" stop-color="#C77B89"/>
+      <stop offset="100%" stop-color="#9E5E6C"/>
+    </radialGradient>
+    <linearGradient id="st-edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+  <path d="M50 10 Q53 22 65 56 Q70 78 50 88 Q30 78 35 56 Q47 22 50 10 Z" fill="url(#st-body)"/>
+  <path d="M50 10 Q53 22 65 56 Q70 78 50 88 Q30 78 35 56 Q47 22 50 10 Z" fill="url(#st-edge)"/>
+  <path d="M48 22 Q49 28 52 50 L50 53 L48 50 Q51 28 48 22 Z" fill="#FFFFFF" opacity="0.32"/>
+  <ellipse cx="44" cy="62" rx="2" ry="6" fill="#FFFFFF" opacity="0.18" transform="rotate(-8 44 62)"/>
+</svg>

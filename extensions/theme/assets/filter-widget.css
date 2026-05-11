@@ -1,0 +1,53 @@
+.nail-shape-btns {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 16px 0;
+  margin-bottom: 16px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nail-shape-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 2px solid #e5e5e5;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  min-width: 90px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.nail-shape-btn:hover {
+  border-color: #d0a8b8;
+  background: #fafafa;
+}
+
+.nail-shape-btn.active {
+  background: #f4c6d3;
+  border-color: #d9708a;
+}
+
+.nail-shape-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.nail-shape-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nail-shape-btn.active .nail-shape-label {
+  color: #8b4c5f;
+}

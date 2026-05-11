@@ -1,0 +1,7 @@
+api_version = "2026-04"
+
+[[extensions]]
+name = "Nail Shape Filter"
+handle = "nail-shape-filter"
+type = "theme"
+version = "0.1.0"

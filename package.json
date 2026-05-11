@@ -1,0 +1,9 @@
+{
+  "name": "nail-shade-category-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "create-metafield": "node scripts/create-metafield.js",
+    "migrate": "node scripts/migrate-nail-shape.js"
+  }
+}

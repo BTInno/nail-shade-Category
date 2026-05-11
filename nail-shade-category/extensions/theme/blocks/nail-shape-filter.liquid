@@ -1,0 +1,56 @@
+{% comment %}
+  Nail Shape Filter — App Embed
+  Auto-injects shape selector buttons on collection pages. Clicking a button
+  navigates to a Shopify native filter URL (?filter.v.t.shopify.nail-shape=GID),
+  triggering server-side filtering. No more client-side display:none — pagination
+  and the left-sidebar filter stay in sync via the URL automatically.
+
+  Theme whitelist (optional): set allowed_theme_ids to a comma-separated list of
+  theme IDs to restrict rendering. Leave as "" to allow ALL themes — gating then
+  relies on the merchant enabling/disabling this App Embed per theme.
+{% endcomment %}
+
+{%- assign allowed_theme_ids = "" -%}
+{%- assign current_theme_id = theme.id | append: "" -%}
+{%- assign whitelist_pass = false -%}
+{%- if allowed_theme_ids == blank -%}
+  {%- assign whitelist_pass = true -%}
+{%- else -%}
+  {%- assign allowed_list = allowed_theme_ids | split: "," -%}
+  {%- if allowed_list contains current_theme_id -%}{%- assign whitelist_pass = true -%}{%- endif -%}
+{%- endif -%}
+
+<!-- nail-shape-filter v0.7.2 | theme.id={{ theme.id }} | theme.role={{ theme.role }} | template={{ template.name }} | whitelist={{ allowed_theme_ids }} | pass={{ whitelist_pass }} -->
+
+{% if template.name == 'collection' and collection and whitelist_pass %}
+  <script>
+    window.__NAIL_SHAPE_ASSET_BASE__ = "{{ 'filter-widget.js' | asset_url | replace: 'filter-widget.js', '' }}";
+  </script>
+  {{ 'filter-widget.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'filter-widget.js' | asset_url }}" defer></script>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Nail Shape Filter v0.7.2",
+  "target": "body",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Version Info"
+    },
+    {
+      "type": "paragraph",
+      "content": "Version: 0.7.2 · Updated: 2026-05-11 · Self-healing poll restores label after AJAX swap. Scroll position pinned across swap (no jump to top). Hides entire widget on collections without nail-shape filter facet. New Almond SVG (gradient+highlight)."
+    },
+    {
+      "type": "paragraph",
+      "content": "Click → navigate to Shopify native filter URL (?filter.v.t.shopify.nail-shape=GID). Server-side filtering, cross-page works for free, stays in sync with left-sidebar checkboxes. Active filter shown as 'Selected: X + Clear' next to the theme's Filter toggle button."
+    },
+    {
+      "type": "paragraph",
+      "content": "Theme whitelist OFF (empty allowed_theme_ids). Gating is via the App Embed enable toggle in each theme."
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,8 @@
+{% comment %}Nail Shape Filter Block{% endcomment %}
+
+<div data-nail-shape-filter data-asset-url-base="{{ 'filter-widget.js' | asset_url | replace: 'filter-widget.js', '' }}">
+  <div class="nail-shape-filter__container"></div>
+</div>
+
+{{ 'filter-widget.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'filter-widget.js' | asset_url }}" defer></script>

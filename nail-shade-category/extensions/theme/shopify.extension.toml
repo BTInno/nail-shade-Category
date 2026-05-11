@@ -1,0 +1,8 @@
+api_version = "2026-04"
+uid = "cfca5f16-0f39-579d-5a1f-886a9b48cfb4569dcf38"
+
+[[extensions]]
+name = "Nail Shape Filter"
+handle = "nail-shape-filter"
+type = "theme"
+version = "0.1.0"

@@ -1,0 +1,12 @@
+{
+  "name": "Nail Shape Filter",
+  "tag": "nail-shape-filter",
+  "target": "section",
+  "blocks": [],
+  "settings": [],
+  "presets": [
+    {
+      "name": "Nail Shape Filter"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+# Environment / secrets
+.env
+.env.*
+*.key
+*.pem
+secrets*
+
+# Dependencies
+node_modules/
+
+# Shopify CLI local state (per-developer, not source of truth)
+.shopify/
+**/.shopify/
+.shopify.lock
+
+# Build / dist output
+build/
+dist/
+extensions/*/build/
+extensions/*/dist/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/settings.json
+
+# Test coverage
+coverage/
+
+# Temp curl snapshots / preview artifacts
+/tmp-preview/
+*.html.bak

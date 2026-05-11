@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="ot-body" cx="48%" cy="30%" r="62%">
+      <stop offset="0%" stop-color="#E8AAB6"/>
+      <stop offset="55%" stop-color="#C77B89"/>
+      <stop offset="100%" stop-color="#9E5E6C"/>
+    </radialGradient>
+    <linearGradient id="ot-edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+  <path d="M30 16 Q30 12 34 12 L66 12 Q70 12 70 16 L70 66 Q70 86 50 88 Q30 86 30 66 Z" fill="url(#ot-body)"/>
+  <path d="M30 16 Q30 12 34 12 L66 12 Q70 12 70 16 L70 66 Q70 86 50 88 Q30 86 30 66 Z" fill="url(#ot-edge)"/>
+  <ellipse cx="40" cy="28" rx="5.5" ry="11.5" fill="#FFFFFF" opacity="0.32" transform="rotate(-8 40 28)"/>
+  <circle cx="40" cy="62" r="3" fill="#7A3F4A" opacity="0.85"/>
+  <circle cx="50" cy="62" r="3" fill="#7A3F4A" opacity="0.85"/>
+  <circle cx="60" cy="62" r="3" fill="#7A3F4A" opacity="0.85"/>
+</svg>
